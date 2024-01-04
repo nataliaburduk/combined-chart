@@ -1,0 +1,84 @@
+.combo-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.select-value {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}
+
+.value-and-units-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.select-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #232426;
+  background-color: #e5ecf55e;
+  font-size: 12px;
+  font-weight: 600;
+
+  label,
+  div {
+    color: #232426;
+  }
+
+  select {
+    border: none;
+    color: orange;
+    background-color: transparent;
+
+    &:active,
+    &:visited,
+    &:focus-visible {
+      border: none;
+      outline: none;
+    }
+
+    option {
+      padding: 10px;
+    }
+  }
+
+  p {
+    color: orange;
+  }
+}
+
+button {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #232426;
+  background-color: #e5ecf55e;
+  color: orange;
+  cursor: pointer;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: orange;
+    color: white;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
